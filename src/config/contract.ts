@@ -1,8 +1,11 @@
 import { zeroAddress, type Address } from 'viem'
 
-// After Remix deployment, paste the Base Mainnet address here.
-const deployedAddress = '0x0000000000000000000000000000000000000000'
-const configuredAddress = import.meta.env.VITE_STILLPOINT_CONTRACT_ADDRESS
+const deployedAddress =
+  '0xf5c53ab6218c35Fa4545D44078B3bE40bb6bfD11'
+
+const configuredAddress =
+  import.meta.env.VITE_STILLPOINT_CONTRACT_ADDRESS
+
 const activeAddress = configuredAddress || deployedAddress
 
 export const isContractConfigured = Boolean(

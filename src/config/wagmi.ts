@@ -3,10 +3,7 @@ import { createConfig, http } from 'wagmi'
 import { base } from 'wagmi/chains'
 import { baseAccount, injected } from 'wagmi/connectors'
 
-const deployedBuilderCode = 'bc_3jesd3jg'
-
-export const BUILDER_CODE =
-  import.meta.env.VITE_BUILDER_CODE || deployedBuilderCode
+export const BUILDER_CODE = 'bc_3jesd3jg'
 
 export const DATA_SUFFIX = Attribution.toDataSuffix({
   codes: [BUILDER_CODE],
